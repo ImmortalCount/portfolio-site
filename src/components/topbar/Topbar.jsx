@@ -1,29 +1,31 @@
-import React from 'react'
-import './topbar.scss'
+import "./topbar.scss";
+import { Person, Mail } from "@material-ui/icons";
 
-export default function Topbar() {
-    return (
-        <div className='topbar active'>
-            <div className='wrapper'>
-            <div className='left'>
-                <a href="#portfolio"> Go to portfolio</a>
-                <div className='itemContainer'>
-                    <span>Phone Number: </span>
-                    <span>415 717 4573</span>
-                </div>
-                <div className='itemContainer'>
-                    <span>Email: </span>
-                    <span>DevinTurner@turnermedia.com</span>
-                </div>
-            </div>
-            <div className='right'>
-                <div className='hamburger'>
-                <span className='line a'></span>
-                <span className='line b'></span>
-                <span className='line c'></span>
-                </div>
-            </div>
-            </div>
+export default function Topbar({ menuOpen, setMenuOpen }) {
+  return (
+    <div className={"topbar " + (menuOpen && "active")}>
+      <div className="wrapper">
+        <div className="left">
+          <a href="#intro" className="logo">
+            DT.
+          </a>
+          <div className="itemContainer">
+            <Person className="icon" />
+            <span>+1 415 717 4573</span>
+          </div>
+          <div className="itemContainer">
+            <Mail className="icon" />
+            <span>Devnaut@gmail.com</span>
+          </div>
         </div>
-    )
+        <div className="right">
+          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
