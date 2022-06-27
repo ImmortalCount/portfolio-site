@@ -10,7 +10,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed:60,
-      strings: ["Developer", "Designer", "Content Creator"],
+      strings: ["Web Developer", "AppMaker", "Musician", "For hire!"],
     });
   }, []);
 
@@ -18,15 +18,15 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img className="image" src="assets/man2.jpg" alt="" />
+          <img className="image" src="assets/resizedMan3.jpeg" alt="" />
         </div>
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Hi There, I'm</h2>
+          <h2>Hi there, I'm</h2>
           <h1>Devin Turner</h1>
           <h3>
-            Freelance <span ref={textRef}></span>
+            <span ref={textRef}></span>
           </h3>
         </div>
         <a href="#portfolio">

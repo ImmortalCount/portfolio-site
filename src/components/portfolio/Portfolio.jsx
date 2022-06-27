@@ -15,24 +15,24 @@ export default function Portfolio() {
   const list = [
     {
       id: "featured",
-      title: "Featured",
+      title: "Noodler.io",
     },
     {
       id: "web",
-      title: "Web App",
+      title: "Dinkupp.com",
     },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
+    // {
+    //   id: "mobile",
+    //   title: "Mobile App",
+    // },
+    // {
+    //   id: "design",
+    //   title: "Design",
+    // },
+    // {
+    //   id: "content",
+    //   title: "Content",
+    // },
   ];
 
   useEffect(() => {

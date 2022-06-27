@@ -17,7 +17,6 @@
       width: 700px;
       height: 700px;
       background-color: transparent;
-      border-radius: 50%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
@@ -73,7 +72,7 @@
 
         span {
           font-size: inherit;
-          color: crimson;
+          color: black;
         }
 
         .ityped-cursor {
