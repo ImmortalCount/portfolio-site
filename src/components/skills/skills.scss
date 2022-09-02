@@ -1,0 +1,25 @@
+.skills {
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.skill_items{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.skill_item{
+    height: 20vh;
+    width: 20vw;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}

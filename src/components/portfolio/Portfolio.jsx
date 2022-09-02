@@ -21,6 +21,12 @@ export default function Portfolio() {
       id: "web",
       title: "Dinkupp.com",
     },
+    {
+      
+    },
+    {
+
+    }
     // {
     //   id: "mobile",
     //   title: "Mobile App",
@@ -58,7 +64,7 @@ export default function Portfolio() {
   }, [selected]);
 
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="portfolio" >
       <h1>Portfolio</h1>
       <ul>
         {list.map((item) => (
